@@ -1,15 +1,13 @@
-// import { StyleSheet, Text, View } from 'react-native'
-// import React from 'react'
-// import Customtextinput from '../components/customtextinput';
+import { View, Text } from 'react-native'
+import React from 'react'
+import App from '../components/App'
 
-// const index = () => {
-//   return (
-//     <View style={{flex: 1}}>
-//      <Customtextinput/>
-//     </View>
-//   );
-// };
+const index = () => {
+  return (
+    <View>
+      <App />
+    </View>
+  )
+}
 
-// export default index;
-
-// const styles = StyleSheet.create({});
+export default index
