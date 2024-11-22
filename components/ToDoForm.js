@@ -6,8 +6,8 @@ const ToDoForm = ({ addTask }) => {
 
   // Handle adding the new task
   const handleAddTask = () => {
-    addTask(newTask);  // Call addTask from props
-    setNewTask('');    // Clear the input
+    addTask(newTask); // Call addTask from props
+    setNewTask('');   // Clear the input field
   };
 
   return (
@@ -18,7 +18,7 @@ const ToDoForm = ({ addTask }) => {
         onChangeText={setNewTask}
         placeholder="Add a new task..."
       />
-      <Button title="Add" onPress={handleAddTask} />
+      <Button title="Add Task" onPress={handleAddTask} />
     </View>
   );
 };
@@ -28,13 +28,13 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginHorizontal: 20,
     marginTop: 20,
   },
   input: {
     flex: 1,
     borderWidth: 1,
     borderColor: '#ccc',
+    borderRadius: 5,
     paddingHorizontal: 10,
     paddingVertical: 5,
     marginRight: 10,
