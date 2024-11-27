@@ -1,7 +1,7 @@
 // AboutScreen.jsx
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import MainLayout from '../../src/layouts/MainLayout';  // Import MainLayout
+import MainLayout from '../layouts/MainLayout';  // Import MainLayout
 
 function AboutScreen() {
   const currentDate = new Date().toLocaleDateString();
